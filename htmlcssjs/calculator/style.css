@@ -1,0 +1,26 @@
+#container{
+    margin: 0;
+    padding: 0;
+}
+#cal{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+.btn{
+    display: flex;
+    padding: 1em;
+    height: 50px;
+    width: 70px;
+}
+#heading{
+    text-align: center;
+}
+#final{
+    text-align: end;
+}
