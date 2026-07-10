@@ -1,0 +1,23 @@
+#sub-c{
+    text-align: center;
+}
+#container{
+    display: flex;
+    justify-content: center;
+}
+body{
+ background-color: darkgray;
+}
+#input{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+#btn{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 60px;
+    background-color: darkmagenta;
+    color: white;
+}

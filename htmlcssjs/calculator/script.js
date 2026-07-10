@@ -17,7 +17,7 @@ btnvalue.forEach((button) => {
             } else {
                 finalresult.textContent += button.textContent;
             }
-            if (!isNaN(button.textContent)) {
+            if (!isNaN(button.textContent) || button.textContent===".") {
                 if (str === "") {
                     firstNumber += (button.textContent);
                 } else {
@@ -53,7 +53,11 @@ btnvalue.forEach((button) => {
             lastNumber = "";
         } else if (button.textContent === "⌫") {
             newtext = finalresult.textContent.slice(0, -1);
-            finalresult.textContent = newtext;
+            if(newtext.length==0){
+                finalresult.textContent = 0;
+            }else{
+                 finalresult.textContent = newtext;
+            }
             if (!lastNumber == "") {
                 newlastnumber = lastNumber.slice(0, -1);
                 lastNumber = newlastnumber;
@@ -65,7 +69,6 @@ btnvalue.forEach((button) => {
                 firstNumber = newfirstnumber;
             }
         }
-
     });
 
 });
